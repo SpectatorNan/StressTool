@@ -29,9 +29,22 @@
 		76D7D7EE2E1ED195002FC2E6 /* StressToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StressToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		76D7D81A2E1EE70E002FC2E6 /* Exceptions for "StressTool" folder in "StressTool" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 76D7D7D32E1ED193002FC2E6 /* StressTool */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		76D7D7D62E1ED193002FC2E6 /* StressTool */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				76D7D81A2E1EE70E002FC2E6 /* Exceptions for "StressTool" folder in "StressTool" target */,
+			);
 			path = StressTool;
 			sourceTree = "<group>";
 		};
@@ -398,6 +411,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StressTool/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,6 +438,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StressTool/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
