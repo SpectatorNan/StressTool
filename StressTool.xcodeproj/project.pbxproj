@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		76D7D7E52E1ED195002FC2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76D7D7CC2E1ED193002FC2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76D7D7D32E1ED193002FC2E6;
+			remoteInfo = StressTool;
+		};
+		76D7D7EF2E1ED195002FC2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76D7D7CC2E1ED193002FC2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76D7D7D32E1ED193002FC2E6;
+			remoteInfo = StressTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76D7D7D42E1ED193002FC2E6 /* StressTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StressTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D7D7E42E1ED195002FC2E6 /* StressToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StressToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D7D7EE2E1ED195002FC2E6 /* StressToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StressToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		76D7D7D62E1ED193002FC2E6 /* StressTool */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StressTool;
+			sourceTree = "<group>";
+		};
+		76D7D7E72E1ED195002FC2E6 /* StressToolTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StressToolTests;
+			sourceTree = "<group>";
+		};
+		76D7D7F12E1ED195002FC2E6 /* StressToolUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StressToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76D7D7D12E1ED193002FC2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D7D7E12E1ED195002FC2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D7D7EB2E1ED195002FC2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76D7D7CB2E1ED193002FC2E6 = {
+			isa = PBXGroup;
+			children = (
+				76D7D7D62E1ED193002FC2E6 /* StressTool */,
+				76D7D7E72E1ED195002FC2E6 /* StressToolTests */,
+				76D7D7F12E1ED195002FC2E6 /* StressToolUITests */,
+				76D7D7D52E1ED193002FC2E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76D7D7D52E1ED193002FC2E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76D7D7D42E1ED193002FC2E6 /* StressTool.app */,
+				76D7D7E42E1ED195002FC2E6 /* StressToolTests.xctest */,
+				76D7D7EE2E1ED195002FC2E6 /* StressToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76D7D7D32E1ED193002FC2E6 /* StressTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D7D7F82E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressTool" */;
+			buildPhases = (
+				76D7D7D02E1ED193002FC2E6 /* Sources */,
+				76D7D7D12E1ED193002FC2E6 /* Frameworks */,
+				76D7D7D22E1ED193002FC2E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				76D7D7D62E1ED193002FC2E6 /* StressTool */,
+			);
+			name = StressTool;
+			packageProductDependencies = (
+			);
+			productName = StressTool;
+			productReference = 76D7D7D42E1ED193002FC2E6 /* StressTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76D7D7E32E1ED195002FC2E6 /* StressToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D7D7FB2E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressToolTests" */;
+			buildPhases = (
+				76D7D7E02E1ED195002FC2E6 /* Sources */,
+				76D7D7E12E1ED195002FC2E6 /* Frameworks */,
+				76D7D7E22E1ED195002FC2E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76D7D7E62E1ED195002FC2E6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76D7D7E72E1ED195002FC2E6 /* StressToolTests */,
+			);
+			name = StressToolTests;
+			packageProductDependencies = (
+			);
+			productName = StressToolTests;
+			productReference = 76D7D7E42E1ED195002FC2E6 /* StressToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76D7D7ED2E1ED195002FC2E6 /* StressToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D7D7FE2E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressToolUITests" */;
+			buildPhases = (
+				76D7D7EA2E1ED195002FC2E6 /* Sources */,
+				76D7D7EB2E1ED195002FC2E6 /* Frameworks */,
+				76D7D7EC2E1ED195002FC2E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76D7D7F02E1ED195002FC2E6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76D7D7F12E1ED195002FC2E6 /* StressToolUITests */,
+			);
+			name = StressToolUITests;
+			packageProductDependencies = (
+			);
+			productName = StressToolUITests;
+			productReference = 76D7D7EE2E1ED195002FC2E6 /* StressToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76D7D7CC2E1ED193002FC2E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					76D7D7D32E1ED193002FC2E6 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					76D7D7E32E1ED195002FC2E6 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 76D7D7D32E1ED193002FC2E6;
+					};
+					76D7D7ED2E1ED195002FC2E6 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 76D7D7D32E1ED193002FC2E6;
+					};
+				};
+			};
+			buildConfigurationList = 76D7D7CF2E1ED193002FC2E6 /* Build configuration list for PBXProject "StressTool" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76D7D7CB2E1ED193002FC2E6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 76D7D7D52E1ED193002FC2E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76D7D7D32E1ED193002FC2E6 /* StressTool */,
+				76D7D7E32E1ED195002FC2E6 /* StressToolTests */,
+				76D7D7ED2E1ED195002FC2E6 /* StressToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76D7D7D22E1ED193002FC2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D7D7E22E1ED195002FC2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D7D7EC2E1ED195002FC2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76D7D7D02E1ED193002FC2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D7D7E02E1ED195002FC2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D7D7EA2E1ED195002FC2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76D7D7E62E1ED195002FC2E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76D7D7D32E1ED193002FC2E6 /* StressTool */;
+			targetProxy = 76D7D7E52E1ED195002FC2E6 /* PBXContainerItemProxy */;
+		};
+		76D7D7F02E1ED195002FC2E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76D7D7D32E1ED193002FC2E6 /* StressTool */;
+			targetProxy = 76D7D7EF2E1ED195002FC2E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		76D7D7F62E1ED195002FC2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76D7D7F72E1ED195002FC2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		76D7D7F92E1ED195002FC2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StressTool/StressTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spectator.nanlin.StressTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76D7D7FA2E1ED195002FC2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StressTool/StressTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spectator.nanlin.StressTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		76D7D7FC2E1ED195002FC2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spectator.nanlin.StressToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StressTool.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StressTool";
+			};
+			name = Debug;
+		};
+		76D7D7FD2E1ED195002FC2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spectator.nanlin.StressToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StressTool.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StressTool";
+			};
+			name = Release;
+		};
+		76D7D7FF2E1ED195002FC2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spectator.nanlin.StressToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = StressTool;
+			};
+			name = Debug;
+		};
+		76D7D8002E1ED195002FC2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spectator.nanlin.StressToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = StressTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76D7D7CF2E1ED193002FC2E6 /* Build configuration list for PBXProject "StressTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D7D7F62E1ED195002FC2E6 /* Debug */,
+				76D7D7F72E1ED195002FC2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D7D7F82E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D7D7F92E1ED195002FC2E6 /* Debug */,
+				76D7D7FA2E1ED195002FC2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D7D7FB2E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D7D7FC2E1ED195002FC2E6 /* Debug */,
+				76D7D7FD2E1ED195002FC2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D7D7FE2E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D7D7FF2E1ED195002FC2E6 /* Debug */,
+				76D7D8002E1ED195002FC2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76D7D7CC2E1ED193002FC2E6 /* Project object */;
+}
