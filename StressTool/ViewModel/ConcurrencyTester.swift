@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import AsyncHTTPClient
+import NIOCore
 
 @MainActor
 class ConcurrencyTester: ObservableObject {
@@ -131,22 +133,46 @@ class ConcurrencyTester: ObservableObject {
         // 移除立即刷新，让定时器处理批量更新
         // await flushPendingLogs()
 
-        let session = URLSession.shared
+//        let session = URLSession.shared
         do {
             let start = Date()
-            var request = URLRequest(url: url)
-            request.httpMethod = method
-            if method == "POST" {
-                request.httpBody = body.data(using: .utf8)
-                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            var request = HTTPClientRequest(url: url.absoluteString)
+            request.headers.add(name: "User-Agent", value: "StressTool, Swift HTTPClient")
+            if method == "POST"{
+                request.method = .POST
+                request.body = .bytes(ByteBuffer(string: body))
+                request.headers.add(name: "Content-Type", value: "application/json")
             }
-            let (data, response) = try await session.data(for: request)
+            let response = try await HTTPClient.shared.execute(request, timeout: .seconds(30))
+            
+//            var request = URLRequest(url: url)
+//            request.httpMethod = method
+//            if method == "POST" {
+//                request.httpBody = body.data(using: .utf8)
+//                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//            }
+//            let (data, response) = try await session.data(for: request)
             let end = Date()
             let duration = end.timeIntervalSince(start)
+            
+            let statusCode = response.status.code
+            
+            print("HTTP head", response)
+                        let body = try await response.body.collect(upTo: 1024 * 1024)  // 1 MB
+                        // we use an overload defined in `NIOFoundationCompat` for `decode(_:from:)` to
+                        // efficiently decode from a `ByteBuffer`
+//                        let comic = try JSONDecoder().decode(Comic.self, from: body)
+            let responseBody = String(buffer: body)
+            if response.status == .ok {
+                
+            } else {
+                
+            }
 
-            let httpResponse = response as? HTTPURLResponse
-            let statusCode = httpResponse?.statusCode
-            let responseBody = String(data: data, encoding: .utf8)
+//            let httpResponse = response as? HTTPURLResponse
+//            let statusCode = httpResponse?.statusCode
+//            let responseBody = String(data: data, encoding: .utf8)
 
             await MainActor.run {
                 // 先在 pendingLogs 中查找，如果没有则在 logs 中查找

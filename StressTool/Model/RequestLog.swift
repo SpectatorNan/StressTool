@@ -15,11 +15,11 @@ struct RequestLog: Identifiable, Equatable {
     var status: RequestStatus = .pending
     var url: String?
     var method: String?
-    var statusCode: Int?
+    var statusCode: UInt?
     var responseBody: String?
     var errorMessage: String?
     
-    init(id: UUID = UUID(), startTime: Date, endTime: Date? = nil, duration: Double? = nil, status: RequestStatus = .pending, url: String? = nil, method: String? = nil, statusCode: Int? = nil, responseBody: String? = nil, errorMessage: String? = nil) {
+    init(id: UUID = UUID(), startTime: Date, endTime: Date? = nil, duration: Double? = nil, status: RequestStatus = .pending, url: String? = nil, method: String? = nil, statusCode: UInt? = nil, responseBody: String? = nil, errorMessage: String? = nil) {
         self.id = id
         self.startTime = startTime
         self.endTime = endTime

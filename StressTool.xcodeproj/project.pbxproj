@@ -3,8 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		76D7D8402E1FC12F002FC2E6 /* AsyncHTTPClient in Frameworks */ = {isa = PBXBuildFile; productRef = 76D7D83F2E1FC12F002FC2E6 /* AsyncHTTPClient */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		76D7D7E52E1ED195002FC2E6 /* PBXContainerItemProxy */ = {
@@ -63,24 +67,19 @@
 /* Begin PBXFrameworksBuildPhase section */
 		76D7D7D12E1ED193002FC2E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
+				76D7D8402E1FC12F002FC2E6 /* AsyncHTTPClient in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76D7D7E12E1ED195002FC2E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76D7D7EB2E1ED195002FC2E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -91,6 +90,7 @@
 				76D7D7D62E1ED193002FC2E6 /* StressTool */,
 				76D7D7E72E1ED195002FC2E6 /* StressToolTests */,
 				76D7D7F12E1ED195002FC2E6 /* StressToolUITests */,
+				76D7D83E2E1FC12F002FC2E6 /* Frameworks */,
 				76D7D7D52E1ED193002FC2E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +103,13 @@
 				76D7D7EE2E1ED195002FC2E6 /* StressToolUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		76D7D83E2E1FC12F002FC2E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,13 +125,12 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				76D7D7D62E1ED193002FC2E6 /* StressTool */,
 			);
 			name = StressTool;
 			packageProductDependencies = (
+				76D7D83F2E1FC12F002FC2E6 /* AsyncHTTPClient */,
 			);
 			productName = StressTool;
 			productReference = 76D7D7D42E1ED193002FC2E6 /* StressTool.app */;
@@ -147,8 +153,6 @@
 				76D7D7E72E1ED195002FC2E6 /* StressToolTests */,
 			);
 			name = StressToolTests;
-			packageProductDependencies = (
-			);
 			productName = StressToolTests;
 			productReference = 76D7D7E42E1ED195002FC2E6 /* StressToolTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +174,6 @@
 				76D7D7F12E1ED195002FC2E6 /* StressToolUITests */,
 			);
 			name = StressToolUITests;
-			packageProductDependencies = (
-			);
 			productName = StressToolUITests;
 			productReference = 76D7D7EE2E1ED195002FC2E6 /* StressToolUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -208,7 +210,10 @@
 			);
 			mainGroup = 76D7D7CB2E1ED193002FC2E6;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			packageReferences = (
+				76D7D83D2E1FBDC3002FC2E6 /* XCRemoteSwiftPackageReference "async-http-client" */,
+			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 76D7D7D52E1ED193002FC2E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,48 +228,36 @@
 /* Begin PBXResourcesBuildPhase section */
 		76D7D7D22E1ED193002FC2E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76D7D7E22E1ED195002FC2E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76D7D7EC2E1ED195002FC2E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76D7D7D02E1ED193002FC2E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76D7D7E02E1ED195002FC2E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76D7D7EA2E1ED195002FC2E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -282,7 +275,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		76D7D7F62E1ED195002FC2E6 /* Debug */ = {
+		76D7D7F62E1ED195002FC2E6 /* Debug configuration for PBXProject "StressTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,7 +338,7 @@
 			};
 			name = Debug;
 		};
-		76D7D7F72E1ED195002FC2E6 /* Release */ = {
+		76D7D7F72E1ED195002FC2E6 /* Release configuration for PBXProject "StressTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -400,7 +393,7 @@
 			};
 			name = Release;
 		};
-		76D7D7F92E1ED195002FC2E6 /* Debug */ = {
+		76D7D7F92E1ED195002FC2E6 /* Debug configuration for PBXNativeTarget "StressTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -427,7 +420,7 @@
 			};
 			name = Debug;
 		};
-		76D7D7FA2E1ED195002FC2E6 /* Release */ = {
+		76D7D7FA2E1ED195002FC2E6 /* Release configuration for PBXNativeTarget "StressTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -454,7 +447,7 @@
 			};
 			name = Release;
 		};
-		76D7D7FC2E1ED195002FC2E6 /* Debug */ = {
+		76D7D7FC2E1ED195002FC2E6 /* Debug configuration for PBXNativeTarget "StressToolTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,7 +464,7 @@
 			};
 			name = Debug;
 		};
-		76D7D7FD2E1ED195002FC2E6 /* Release */ = {
+		76D7D7FD2E1ED195002FC2E6 /* Release configuration for PBXNativeTarget "StressToolTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,7 +481,7 @@
 			};
 			name = Release;
 		};
-		76D7D7FF2E1ED195002FC2E6 /* Debug */ = {
+		76D7D7FF2E1ED195002FC2E6 /* Debug configuration for PBXNativeTarget "StressToolUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -503,7 +496,7 @@
 			};
 			name = Debug;
 		};
-		76D7D8002E1ED195002FC2E6 /* Release */ = {
+		76D7D8002E1ED195002FC2E6 /* Release configuration for PBXNativeTarget "StressToolUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -524,40 +517,55 @@
 		76D7D7CF2E1ED193002FC2E6 /* Build configuration list for PBXProject "StressTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76D7D7F62E1ED195002FC2E6 /* Debug */,
-				76D7D7F72E1ED195002FC2E6 /* Release */,
+				76D7D7F62E1ED195002FC2E6 /* Debug configuration for PBXProject "StressTool" */,
+				76D7D7F72E1ED195002FC2E6 /* Release configuration for PBXProject "StressTool" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		76D7D7F82E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76D7D7F92E1ED195002FC2E6 /* Debug */,
-				76D7D7FA2E1ED195002FC2E6 /* Release */,
+				76D7D7F92E1ED195002FC2E6 /* Debug configuration for PBXNativeTarget "StressTool" */,
+				76D7D7FA2E1ED195002FC2E6 /* Release configuration for PBXNativeTarget "StressTool" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		76D7D7FB2E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressToolTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76D7D7FC2E1ED195002FC2E6 /* Debug */,
-				76D7D7FD2E1ED195002FC2E6 /* Release */,
+				76D7D7FC2E1ED195002FC2E6 /* Debug configuration for PBXNativeTarget "StressToolTests" */,
+				76D7D7FD2E1ED195002FC2E6 /* Release configuration for PBXNativeTarget "StressToolTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		76D7D7FE2E1ED195002FC2E6 /* Build configuration list for PBXNativeTarget "StressToolUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76D7D7FF2E1ED195002FC2E6 /* Debug */,
-				76D7D8002E1ED195002FC2E6 /* Release */,
+				76D7D7FF2E1ED195002FC2E6 /* Debug configuration for PBXNativeTarget "StressToolUITests" */,
+				76D7D8002E1ED195002FC2E6 /* Release configuration for PBXNativeTarget "StressToolUITests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76D7D83D2E1FBDC3002FC2E6 /* XCRemoteSwiftPackageReference "async-http-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-server/async-http-client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76D7D83F2E1FC12F002FC2E6 /* AsyncHTTPClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76D7D83D2E1FBDC3002FC2E6 /* XCRemoteSwiftPackageReference "async-http-client" */;
+			productName = AsyncHTTPClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76D7D7CC2E1ED193002FC2E6 /* Project object */;
 }
