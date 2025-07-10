@@ -10,13 +10,13 @@ import SwiftData
 
 @Model
 class PersistentLog {
-    var startTime: Date
-    var duration: Double?
-    var status: String
+  var startTime: Date
+  var duration: Double?
+  var status: String
 
-    init(startTime: Date, duration: Double?, status: String) {
-        self.startTime = startTime
-        self.duration = duration
-        self.status = status
-    }
+  init(startTime: Date, duration: Double?, status: String) {
+    self.startTime = startTime
+    self.duration = duration
+    self.status = status
+  }
 }

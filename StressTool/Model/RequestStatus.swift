@@ -6,5 +6,5 @@
 //
 
 enum RequestStatus: String, Codable {
-    case pending, success, failed
+  case pending, success, failed
 }

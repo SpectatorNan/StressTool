@@ -1,0 +1,76 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    name: Build and Release StressTool
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Select Xcode Version
+        run: |
+          sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+          
+      - name: Show Build Environment
+        run: |
+          xcodebuild -version
+          swift --version
+          
+      - name: Resolve Package Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies -project StressTool.xcodeproj
+          
+      - name: Build Release
+        run: |
+          xcodebuild clean archive \
+            -project StressTool.xcodeproj \
+            -scheme StressTool \
+            -destination 'platform=macOS' \
+            -configuration Release \
+            -archivePath StressTool.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM=""
+            
+      - name: Export App
+        run: |
+          mkdir -p export
+          cp -R StressTool.xcarchive/Products/Applications/StressTool.app export/
+          
+      - name: Create DMG
+        run: |
+          # Create a simple DMG for distribution
+          hdiutil create -volname "StressTool" -srcfolder export -ov -format UDZO StressTool.dmg
+          
+      - name: Create Release Notes
+        id: release_notes
+        run: |
+          echo "## What's New" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "### Features" >> release_notes.md
+          echo "- High-performance HTTP stress testing" >> release_notes.md
+          echo "- Support for 1-10,000 concurrent connections" >> release_notes.md
+          echo "- Real-time performance monitoring" >> release_notes.md
+          echo "- SwiftUI-based modern interface" >> release_notes.md
+          echo "" >> release_notes.md
+          echo "### Requirements" >> release_notes.md
+          echo "- macOS 14.0 or higher" >> release_notes.md
+          
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            StressTool.dmg
+            StressTool.xcarchive/Products/Applications/StressTool.app
+          body_path: release_notes.md
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

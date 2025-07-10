@@ -1,5 +1,8 @@
 # StressTool
 
+[![Build and Test](https://github.com/YOUR_USERNAME/StressTool/workflows/Build%20and%20Test/badge.svg)](https://github.com/YOUR_USERNAME/StressTool/actions)
+[![Code Quality](https://github.com/YOUR_USERNAME/StressTool/workflows/Code%20Quality/badge.svg)](https://github.com/YOUR_USERNAME/StressTool/actions)
+
 A modern HTTP stress testing tool built with SwiftUI and AsyncHTTPClient, designed specifically for macOS.
 
 ## Features

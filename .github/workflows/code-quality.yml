@@ -1,0 +1,51 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  swiftlint:
+    name: SwiftLint Check
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Install SwiftLint
+        run: |
+          brew install swiftlint
+          
+      - name: Run SwiftLint
+        run: |
+          swiftlint lint --reporter github-actions-logging
+          
+  analyze:
+    name: Static Analysis
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Select Xcode Version
+        run: |
+          sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+          
+      - name: Resolve Package Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies -project StressTool.xcodeproj
+          
+      - name: Run Static Analysis
+        run: |
+          xcodebuild analyze \
+            -project StressTool.xcodeproj \
+            -scheme StressTool \
+            -destination 'platform=macOS' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" | xcpretty && exit ${PIPESTATUS[0]}
