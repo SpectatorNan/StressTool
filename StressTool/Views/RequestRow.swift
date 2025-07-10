@@ -47,7 +47,7 @@ struct RequestRow: View {
                 if let statusCode = log.statusCode {
                     Text("\(statusCode)")
                         .font(.caption)
-                        .foregroundColor(log.statusCode == 200 ? .green : .orange)
+                        .foregroundColor(statusCode >= 200 && statusCode < 300 ? .green : .orange)
                 }
                 if let duration = log.duration {
                     Text(String(format: "%.2f s", duration))
